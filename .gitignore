@@ -3,7 +3,7 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 *.mp3
-*.mid
-*.midi
-*.keras
-midi_files/
+Task3_music_generation/*.mid
+Task3_music_generation/*.midi
+Task3_music_generation/*.keras
+Task3_music_generation/midi_files/
