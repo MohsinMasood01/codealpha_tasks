@@ -53,4 +53,32 @@ A university student helpdesk chatbot that matches user questions against a FAQ 
 
 ---
 
-*More tasks will be added as the internship progresses.*
+## Task 3: Music Generation with AI
+
+An LSTM-based deep learning model trained on classical MIDI data to generate new music sequences.
+
+**Tools & Libraries:**
+- Python
+- music21 (MIDI parsing and generation)
+- TensorFlow/Keras (LSTM model)
+- NumPy
+
+**Features:**
+- Extracts note and chord sequences from MIDI files using music21
+- Prepares sequences for LSTM training with integer encoding and normalization
+- Two-layer LSTM model with dropout for sequence learning
+- Generates 100-note sequences from a random seed
+- Saves generated output as a playable MIDI file
+
+**Notes:**
+- Trained on 5 Chopin MIDI files, 10,265 training samples, vocabulary of 216 unique notes
+- Trained for 10 epochs on CPU: output quality improves significantly with more epochs and GPU resources
+- Loss reduced from 4.81 to 4.38 over 10 epochs
+
+**How to Run:**
+1. Clone the repository
+2. Install dependencies: 'pip install music21 tensorflow numpy'
+3. Add MIDI files to a 'midi_files/' folder in the same directory
+4. Run the notebook: 'task3_music_generation.ipynb'
+
+*Internship tasks completed!.*
